@@ -1,0 +1,66 @@
+//**
+// Styles
+//**
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+#sidebar {
+	width: 25%;
+	height: 100%;
+	float: left;
+	position: fixed;
+	background: @blue;
+
+}
+
+#header {
+	.HeaderColor();
+	height: 33%;
+	padding: @gutter;
+
+	a, a:link, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+#logo {
+	position: absolute;
+	right: -15px;
+	top: 10px;
+	img {
+		width: 100px;
+	}
+}
+
+#main {
+	width: 75%;
+	margin-left: 25%;
+	height: 100%;
+	padding: 0px 40px;
+}
+
+article header {
+	padding: 50px 0px 0px 0px;
+
+	h1.posttitle {
+		margin-top: 0px;
+	}
+}
+
+.postcontent {
+	padding: @gutter;
+}
+
+/** FOOTER */
+#footer {
+	height: 67%;
+	padding: @gutter;
+}
